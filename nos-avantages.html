@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f6f0">
+  <meta name="theme-color" content="#F8F6F0">
 
   <title>Nos avantages | Modern Solar Énergie</title>
 
-  <meta name="description" content="Découvrez les avantages de Modern Solar Énergie : solutions photovoltaïques, accompagnement personnalisé et économies d'énergie en Tunisie.">
+  <meta name="description" content="Découvrez les avantages de Modern Solar Énergie en Tunisie : 0 DT d'avance selon les conditions de financement, paiement sur 7 ans et étude de projet gratuite.">
 
   <style>
     :root {
-      --green: #174d37;
-      --green-light: #26734f;
-      --gold: #e8b949;
-      --cream: #f8f6f0;
-      --white: #ffffff;
-      --text: #24352c;
-      --muted: #69766d;
+      --navy: #263746;
+      --navy-dark: #192936;
+      --navy-light: #40576A;
+      --gold: #D5A15E;
+      --gold-dark: #AD7939;
+      --cream: #F8F6F0;
+      --white: #FFFFFF;
+      --text: #303B43;
+      --muted: #6D777E;
+      --border: #E8E2D7;
+      --gold-light: #F5E8D3;
+      --blue-light: #EAF0F4;
     }
 
     * {
@@ -51,8 +56,8 @@
 
     .navbar {
       background: var(--white);
-      padding: 18px 0;
-      border-bottom: 1px solid #e9e9df;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
     }
 
     .nav-content {
@@ -65,77 +70,77 @@
     .logo {
       font-size: 21px;
       font-weight: 800;
-      color: var(--green);
+      color: var(--navy);
       line-height: 1.3;
     }
 
     .logo span {
       display: block;
       font-size: 12px;
-      font-weight: 500;
-      color: var(--gold);
+      font-weight: 600;
+      color: var(--gold-dark);
       letter-spacing: 2px;
     }
 
     .nav-link {
       font-size: 14px;
       font-weight: 700;
-      color: var(--green);
-      padding: 10px 16px;
-      border: 1px solid #dce5dc;
+      color: var(--navy);
+      padding: 10px 17px;
+      border: 1px solid var(--border);
       border-radius: 30px;
       transition: 0.3s;
     }
 
     .nav-link:hover {
-      background: var(--green);
+      background: var(--navy);
       color: var(--white);
     }
 
     /* Hero */
 
     .hero {
-      padding: 90px 0 80px;
+      padding: 82px 0 76px;
       background:
         radial-gradient(
           circle at 85% 15%,
-          rgba(232, 185, 73, 0.18),
-          transparent 32%
+          rgba(213, 161, 94, 0.23),
+          transparent 34%
         ),
-        linear-gradient(135deg, #f8f6f0, #edf3e9);
+        linear-gradient(135deg, #F8F6F0, #F0ECE3);
       text-align: center;
     }
 
     .eyebrow {
       display: inline-block;
       padding: 7px 15px;
-      background: #e7eee4;
-      color: var(--green);
+      background: var(--blue-light);
+      color: var(--navy);
       border-radius: 30px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 800;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.3px;
       text-transform: uppercase;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
       max-width: 850px;
       margin: 0 auto 20px;
-      font-size: clamp(34px, 5vw, 58px);
-      line-height: 1.15;
-      color: var(--green);
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.16;
+      color: var(--navy);
     }
 
     .hero h1 span {
-      color: #c99522;
+      color: var(--gold-dark);
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
       color: var(--muted);
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .hero-actions {
@@ -143,97 +148,189 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 14px;
-      margin-top: 32px;
+      margin-top: 30px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
+      padding: 13px 24px;
       border-radius: 30px;
       font-size: 14px;
       font-weight: 700;
       transition: 0.3s;
+      text-align: center;
     }
 
     .btn-primary {
-      background: var(--green);
+      background: var(--navy);
       color: var(--white);
     }
 
     .btn-primary:hover {
-      background: var(--green-light);
+      background: var(--navy-light);
       transform: translateY(-2px);
     }
 
     .btn-secondary {
-      border: 1px solid #cbd8ca;
-      color: var(--green);
-      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid #D7C8B4;
+      color: var(--navy);
+      background: rgba(255, 255, 255, 0.75);
     }
 
     .btn-secondary:hover {
+      background: var(--gold-light);
+    }
+
+    /* Featured offers */
+
+    .offers {
+      padding: 58px 0 25px;
+    }
+
+    .offers-heading {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .offers-heading h2 {
+      color: var(--navy);
+      font-size: clamp(25px, 3.5vw, 34px);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .offers-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .offer-card {
+      position: relative;
+      overflow: hidden;
       background: var(--white);
+      padding: 30px 24px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(38, 55, 70, 0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(38, 55, 70, 0.09);
+    }
+
+    .offer-card.featured {
+      border: 2px solid var(--gold);
+      background: linear-gradient(145deg, #FFFFFF, #FBF5EB);
+    }
+
+    .offer-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      margin-bottom: 19px;
+      background: var(--gold-light);
+      border-radius: 15px;
+      font-size: 26px;
+    }
+
+    .offer-card h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 9px;
+      line-height: 1.4;
+    }
+
+    .offer-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .offer-value {
+      display: block;
+      color: var(--gold-dark);
+      font-size: clamp(28px, 3vw, 36px);
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .offer-note {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 12px;
     }
 
     /* Advantages */
 
     .advantages {
-      padding: 80px 0;
+      padding: 70px 0 80px;
     }
 
     .section-heading {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 45px;
+      max-width: 720px;
+      margin: 0 auto 40px;
     }
 
     .section-heading h2 {
-      font-size: clamp(28px, 4vw, 40px);
+      font-size: clamp(27px, 4vw, 39px);
       line-height: 1.25;
-      color: var(--green);
-      margin-bottom: 15px;
+      color: var(--navy);
+      margin-bottom: 14px;
     }
 
     .section-heading p {
       color: var(--muted);
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .advantages-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 20px;
     }
 
     .advantage-card {
       background: var(--white);
-      padding: 30px 25px;
-      border-radius: 18px;
-      border: 1px solid #e8e9df;
+      padding: 27px 24px;
+      border-radius: 17px;
+      border: 1px solid var(--border);
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .advantage-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 35px rgba(23, 77, 55, 0.09);
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(38, 55, 70, 0.08);
     }
 
     .icon {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
-      background: #edf3e9;
-      font-size: 27px;
-      margin-bottom: 22px;
+      width: 53px;
+      height: 53px;
+      border-radius: 15px;
+      background: var(--blue-light);
+      font-size: 25px;
+      margin-bottom: 19px;
     }
 
     .advantage-card h3 {
-      color: var(--green);
-      font-size: 19px;
-      margin-bottom: 12px;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 10px;
     }
 
     .advantage-card p {
@@ -245,15 +342,20 @@
 
     .commitment {
       padding: 65px 0;
-      background: var(--green);
+      background: var(--navy);
       color: var(--white);
     }
 
     .commitment-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      gap: 48px;
       align-items: center;
+    }
+
+    .commitment .eyebrow {
+      background: rgba(255, 255, 255, 0.12);
+      color: #F3D4A4;
     }
 
     .commitment h2 {
@@ -263,92 +365,101 @@
     }
 
     .commitment h2 span {
-      color: var(--gold);
+      color: #E9BB78;
     }
 
     .commitment p {
-      color: #dbe7dd;
+      color: #E0E5E9;
       font-size: 15px;
     }
 
     .commitment-list {
       display: grid;
-      gap: 17px;
+      gap: 15px;
     }
 
     .commitment-item {
       display: flex;
       align-items: flex-start;
-      gap: 14px;
-      padding: 17px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      gap: 13px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.13);
       border-radius: 13px;
     }
 
     .check {
-      color: var(--gold);
+      color: #F0C47F;
       font-size: 20px;
       font-weight: bold;
     }
 
     .commitment-item strong {
       display: block;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
 
     .commitment-item small {
-      color: #dbe7dd;
+      display: block;
+      color: #E0E5E9;
       font-size: 13px;
     }
 
     /* CTA */
 
     .cta {
-      padding: 80px 0;
+      padding: 75px 0;
       text-align: center;
     }
 
     .cta-box {
       background: var(--white);
-      border: 1px solid #e8e9df;
-      border-radius: 24px;
-      padding: 50px 25px;
+      border: 1px solid var(--border);
+      border-radius: 23px;
+      padding: 48px 25px;
+      box-shadow: 0 8px 28px rgba(38, 55, 70, 0.04);
     }
 
     .cta h2 {
-      color: var(--green);
+      color: var(--navy);
       font-size: clamp(27px, 4vw, 38px);
-      margin-bottom: 15px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .cta h2 span {
+      color: var(--gold-dark);
     }
 
     .cta p {
       color: var(--muted);
       max-width: 650px;
       margin: 0 auto 25px;
+      font-size: 15px;
     }
 
     /* Footer */
 
     footer {
-      background: #103b2a;
+      background: var(--navy-dark);
       color: var(--white);
       text-align: center;
-      padding: 27px 15px;
+      padding: 25px 15px;
       font-size: 13px;
     }
 
     footer p {
-      color: #d6e3d8;
+      color: #E0E5E9;
     }
 
     footer strong {
-      color: var(--gold);
+      color: #E9BB78;
     }
 
     /* Responsive */
 
     @media (max-width: 800px) {
+      .offers-grid,
       .advantages-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -364,30 +475,93 @@
     }
 
     @media (max-width: 520px) {
+      .container {
+        width: 91%;
+      }
+
+      .offers-grid,
       .advantages-grid {
         grid-template-columns: 1fr;
       }
 
       .nav-content {
-        align-items: flex-start;
+        align-items: center;
+        gap: 10px;
       }
 
       .logo {
-        font-size: 17px;
+        font-size: 16px;
+      }
+
+      .logo span {
+        font-size: 10px;
       }
 
       .nav-link {
-        font-size: 12px;
-        padding: 8px 11px;
+        font-size: 11px;
+        padding: 8px 10px;
         white-space: nowrap;
       }
 
+      .hero {
+        padding: 53px 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
       .hero p {
-        font-size: 15px;
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 12px 18px;
+        font-size: 13px;
+      }
+
+      .offers {
+        padding-top: 45px;
+      }
+
+      .offer-card {
+        padding: 25px 22px;
       }
 
       .advantage-card {
-        padding: 25px 22px;
+        padding: 24px 22px;
+      }
+
+      .advantages {
+        padding: 50px 0 60px;
+      }
+
+      .section-heading {
+        margin-bottom: 30px;
+      }
+
+      .commitment {
+        padding: 50px 0;
+      }
+
+      .cta {
+        padding: 50px 0;
+      }
+
+      .cta-box {
+        padding: 35px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -398,7 +572,6 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-content">
-
       <a href="index.html" class="logo">
         MODERN SOLAR
         <span>ÉNERGIE</span>
@@ -407,7 +580,6 @@
       <a href="index.html" class="nav-link">
         ← Retour à l'accueil
       </a>
-
     </div>
   </header>
 
@@ -420,19 +592,18 @@
         <span class="eyebrow">Pourquoi nous choisir ?</span>
 
         <h1>
-          Nos avantages pour une énergie
-          <span>plus intelligente</span>
+          Votre projet solaire,
+          <span>plus simple et accessible</span>
         </h1>
 
         <p>
-          Chez Modern Solar Énergie, nous vous accompagnons
-          dans votre transition énergétique avec des solutions
-          solaires adaptées à vos besoins, à votre bâtiment
-          et à votre budget.
+          Découvrez nos solutions solaires en Tunisie avec une
+          étude de projet gratuite, des possibilités de financement
+          adaptées et un accompagnement personnalisé.
         </p>
 
         <div class="hero-actions">
-          <a href="#avantages" class="btn btn-primary">
+          <a href="#offres" class="btn btn-primary">
             Découvrir nos avantages
           </a>
 
@@ -444,7 +615,81 @@
       </div>
     </section>
 
-    <!-- Advantages -->
+    <!-- Main offers -->
+    <section class="offers" id="offres">
+      <div class="container">
+
+        <div class="offers-heading">
+          <span class="eyebrow">Nos avantages exclusifs</span>
+
+          <h2>Votre projet solaire à votre portée</h2>
+
+          <p>
+            Des solutions pensées pour vous aider à concrétiser
+            votre projet énergétique.
+          </p>
+        </div>
+
+        <div class="offers-grid">
+
+          <article class="offer-card featured">
+            <div class="offer-icon">💰</div>
+
+            <span class="offer-value">0 DT</span>
+
+            <h3>D'avance</h3>
+
+            <p>
+              Lancez votre projet solaire sans avance initiale,
+              sous réserve des conditions de financement applicables.
+            </p>
+
+            <small class="offer-note">
+              Selon l'éligibilité et les conditions de financement.
+            </small>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-icon">📅</div>
+
+            <span class="offer-value">7 ans</span>
+
+            <h3>Pour votre paiement</h3>
+
+            <p>
+              Étalez le paiement de votre installation sur une
+              période pouvant aller jusqu'à 7 ans, selon les
+              modalités de financement proposées.
+            </p>
+
+            <small class="offer-note">
+              Durée et conditions à confirmer lors de l'étude.
+            </small>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-icon">📋</div>
+
+            <span class="offer-value">0 DT</span>
+
+            <h3>Pour l'étude de projet</h3>
+
+            <p>
+              Bénéficiez d'une étude initiale gratuite de vos
+              besoins énergétiques pour envisager une solution
+              adaptée à votre bâtiment et à votre consommation.
+            </p>
+
+            <small class="offer-note">
+              Étude initiale gratuite.
+            </small>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Other advantages -->
     <section class="advantages" id="avantages">
       <div class="container">
 
@@ -454,8 +699,8 @@
           <h2>Les bonnes raisons de choisir le solaire</h2>
 
           <p>
-            Découvrez les atouts de nos solutions photovoltaïques
-            et les avantages d'un accompagnement adapté à votre projet.
+            Un accompagnement de proximité et des solutions
+            photovoltaïques conçues autour de vos besoins.
           </p>
         </div>
 
@@ -463,17 +708,21 @@
 
           <article class="advantage-card">
             <div class="icon">☀️</div>
+
             <h3>Énergie renouvelable</h3>
+
             <p>
               Exploitez l'énergie du soleil pour produire votre
-              propre électricité et adopter une solution plus
-              respectueuse de l'environnement.
+              propre électricité et contribuer à une énergie
+              plus respectueuse de l'environnement.
             </p>
           </article>
 
           <article class="advantage-card">
-            <div class="icon">💰</div>
+            <div class="icon">📉</div>
+
             <h3>Réduction des dépenses</h3>
+
             <p>
               Réduisez potentiellement votre facture d'électricité
               grâce à une installation adaptée à votre consommation
@@ -483,41 +732,49 @@
 
           <article class="advantage-card">
             <div class="icon">🎯</div>
+
             <h3>Solutions personnalisées</h3>
+
             <p>
-              Chaque projet est différent. Nous vous aidons à
-              identifier une solution adaptée à vos besoins,
-              à votre espace et à votre budget.
+              Chaque projet est différent. Nous étudions vos besoins,
+              votre espace et votre budget afin de vous orienter
+              vers une solution adaptée.
             </p>
           </article>
 
           <article class="advantage-card">
             <div class="icon">🛠️</div>
+
             <h3>Accompagnement du projet</h3>
+
             <p>
-              Bénéficiez d'un accompagnement dans la préparation
-              de votre projet, le choix de votre installation
-              et les différentes étapes de sa réalisation.
+              Nous vous accompagnons dans la préparation de votre
+              projet, le choix de votre installation et les étapes
+              de sa réalisation.
             </p>
           </article>
 
           <article class="advantage-card">
-            <div class="icon">📈</div>
+            <div class="icon">📊</div>
+
             <h3>Investissement réfléchi</h3>
+
             <p>
-              Étudiez le coût de votre installation et les économies
-              envisageables afin de prendre une décision adaptée
-              à votre situation.
+              Étudiez les caractéristiques de votre installation,
+              son coût et les économies potentielles avant de
+              prendre votre décision.
             </p>
           </article>
 
           <article class="advantage-card">
             <div class="icon">🌍</div>
+
             <h3>Un avenir plus durable</h3>
+
             <p>
               Participez à la transition énergétique en privilégiant
-              une source d'énergie renouvelable et en limitant
-              votre dépendance aux énergies conventionnelles.
+              une source renouvelable et en limitant votre dépendance
+              aux énergies conventionnelles.
             </p>
           </article>
 
@@ -539,7 +796,7 @@
 
           <p>
             Notre objectif est de vous aider à faire un choix
-            énergétique éclairé, avec une solution cohérente
+            énergétique éclairé grâce à une solution cohérente
             avec vos besoins et les caractéristiques de votre
             installation en Tunisie.
           </p>
@@ -549,33 +806,39 @@
 
           <div class="commitment-item">
             <span class="check">✓</span>
+
             <div>
-              <strong>Étude de vos besoins</strong>
+              <strong>Étude initiale gratuite</strong>
+
               <small>
-                Une approche fondée sur votre consommation
-                et les caractéristiques de votre projet.
+                Une première étude de vos besoins énergétiques
+                pour mieux préparer votre projet.
               </small>
             </div>
           </div>
 
           <div class="commitment-item">
             <span class="check">✓</span>
+
             <div>
               <strong>Conseils adaptés</strong>
+
               <small>
                 Des recommandations tenant compte de votre
-                situation et de votre budget.
+                bâtiment, de votre consommation et de votre budget.
               </small>
             </div>
           </div>
 
           <div class="commitment-item">
             <span class="check">✓</span>
+
             <div>
               <strong>Devis personnalisé</strong>
+
               <small>
-                Une proposition adaptée aux besoins de votre
-                projet avant de prendre votre décision.
+                Une proposition détaillée pour vous aider à
+                évaluer votre projet avant de vous engager.
               </small>
             </div>
           </div>
@@ -589,15 +852,21 @@
       <div class="container">
         <div class="cta-box">
 
-          <h2>Prêt à passer à l'énergie solaire ?</h2>
+          <span class="eyebrow">Parlons de votre projet</span>
+
+          <h2>
+            Prêt à passer à
+            <span>l'énergie solaire ?</span>
+          </h2>
 
           <p>
-            Parlons de votre projet et découvrons ensemble
-            la solution photovoltaïque qui vous convient.
+            Demandez votre étude initiale gratuite et découvrez
+            les solutions envisageables pour votre habitation,
+            votre entreprise ou votre commerce.
           </p>
 
           <a href="contact.html" class="btn btn-primary">
-            Contactez-nous
+            Demander mon étude gratuite →
           </a>
 
         </div>
