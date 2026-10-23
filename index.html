@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f6f0">
+
+  <title>Modern Solar Énergie | Solutions solaires en Tunisie</title>
+
+  <meta name="description" content="Modern Solar Énergie : installation photovoltaïque, solutions solaires pour particuliers et entreprises, stockage d'énergie et devis personnalisé en Tunisie.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #142b3b;
+      --gold: #b58b5e;
+      --gold-light: #e5c69c;
+      --cream: #f8f6f0;
+      --white: #ffffff;
+      --muted: #68727a;
+      --green: #173c35;
+      --shadow: 0 8px 28px rgba(20, 43, 59, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      color: var(--navy);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      width: min(1320px, 90%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(250, 248, 243, 0.98);
+      border-bottom: 1px solid #e9e4da;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-icon {
+      width: 72px;
+      height: 65px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 27px;
+      line-height: 1.1;
+      font-weight: 800;
+      letter-spacing: -1px;
+      white-space: nowrap;
+    }
+
+    .brand-subtitle {
+      color: var(--gold);
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 7px;
+    }
+
+    .header-contact {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
+    .phone {
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 0;
+      border-radius: 30px;
+      padding: 13px 23px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .2s, background .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: white;
+    }
+
+    .btn-gold:hover {
+      background: #967047;
+    }
+
+    .btn-dark {
+      background: var(--green);
+      color: white;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid #ded8ce;
+      background: white;
+      border-radius: 9px;
+      width: 44px;
+      height: 42px;
+      font-size: 23px;
+      color: var(--navy);
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      background:
+        linear-gradient(90deg,
+          rgba(13, 34, 49, .86) 0%,
+          rgba(13, 34, 49, .68) 36%,
+          rgba(13, 34, 49, .08) 76%),
+        url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85")
+        center 52% / cover no-repeat;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      max-width: 680px;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 4vw, 49px);
+      line-height: 1.13;
+      letter-spacing: -1.4px;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+      display: block;
+    }
+
+    .hero-description {
+      max-width: 470px;
+      color: #f0f1f1;
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 25px;
+    }
+
+    .hero-features {
