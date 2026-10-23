@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez Modern Solar Énergie, votre partenaire en solutions solaires en Tunisie.">
+  <title>À propos de nous | Modern Solar Énergie</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --navy: #173342;
+      --gold: #c49a62;
+      --cream: #f8f6f1;
+      --text: #56636b;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      padding: 17px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .logo span {
+      display: block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      padding: 12px 23px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--navy);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      min-height: 390px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(15, 39, 53, .92), rgba(15, 39, 53, .55)),
+        url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85')
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      padding: 75px 0;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+
+    .hero h1 span {
+      color: #e5c59d;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #edf1f2;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.35;
+      margin: 12px 0 20px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .about-image {
+      width: 100%;
+      min-height: 360px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .about-text p {
+      margin-bottom: 17px;
+      font-size: 14px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 20px 0 28px;
+    }
+
+    .check-list li {
+      margin: 10px 0;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: 800;
+      margin-right: 12px;
+    }
+
+    .mission {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .mission-intro {
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      text-align: left;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(23, 51, 66, .06);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .card-icon {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 13px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .why-box {
+      padding: 30px;
+      background: var(--cream);
+      border-radius: 12px;
+    }
+
+    .why-box h3 {
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .why-box p {
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      color: white;
+      background: var(--navy);
+    }
+
+    .contact h2 {
+      font-size: clamp(25px, 4vw, 36px);
+      margin: 12px 0;
+    }
+
+    .contact p {
+      margin: 0 auto 25px;
+      max-width: 650px;
+      color: #e1e8eb;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #102733;
+      padding: 25px 0;
+      color: #d5dfe3;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer span {
+      color: #e5c59d;
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero {
+        min-height: 350px;
+      }
+
+      .hero-content {
+        padding: 55px 0;
+      }
+
+      .about-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .about-image {
+        min-height: 240px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html">
+        ☀ Modern Solar
+        <span>ÉNERGIE</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="index.html#solutions">Nos solutions</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a class="btn" href="index.html#contact">Demander un devis</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">Votre partenaire énergétique</div>
+        <h1>À propos de <span>Modern Solar Énergie</span></h1>
+        <p>
+          Des solutions solaires intelligentes et durables pour les particuliers,
+          les entreprises et les professionnels en Tunisie.
+        </p>
+        <a class="btn" href="#notre-histoire">Découvrir notre entreprise →</a>
+      </div>
+    </section>
+
+    <section id="notre-histoire">
+      <div class="container about-grid">
+        <img
+          class="about-image"
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+          alt="Espace professionnel moderne"
+          loading="lazy"
+        >
+
+        <div class="about-text">
+          <div class="eyebrow">Qui sommes-nous ?</div>
+          <h2 class="section-title">
+            Votre partenaire pour une énergie plus propre
+          </h2>
+
+          <p>
+            Modern Solar Énergie vous accompagne dans votre transition
+            énergétique grâce à des solutions solaires adaptées à vos besoins.
+          </p>
+
+          <p>
+            Nous souhaitons rendre l'énergie solaire plus accessible en
+            proposant des solutions pensées pour les habitations, les
+            entreprises et les commerces.
+          </p>
+
+          <p>
+            Chaque projet mérite une attention particulière : nous privilégions
+            une approche personnalisée, la qualité des équipements et un
+            accompagnement à chaque étape.
+          </p>
+
+          <ul class="check-list">
+            <li>Solutions adaptées à chaque projet</li>
+            <li>Étude personnalisée de vos besoins</li>
+            <li>Matériel sélectionné avec soin</li>
+            <li>Accompagnement et conseils</li>
+          </ul>
+
+          <a class="btn" href="index.html#contact">Parlons de votre projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="container">
+        <div class="eyebrow">Ce qui nous guide</div>
+        <h2 class="section-title">Notre mission et nos valeurs</h2>
+
+        <p class="mission-intro">
+          Contribuer à un avenir plus durable en accompagnant nos clients
+          vers une utilisation plus intelligente de l'énergie.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">☀️</div>
+            <h3>Notre mission</h3>
+            <p>
+              Encourager l'utilisation de l'énergie solaire grâce à des
+              solutions adaptées aux besoins de chaque client.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">♻️</div>
+            <h3>Notre engagement</h3>
+            <p>
+              Favoriser une énergie plus propre et contribuer à réduire
+              l'impact environnemental de la consommation énergétique.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Nos valeurs</h3>
+            <p>
+              Écoute, confiance, qualité et accompagnement sont au cœur
+              de notre approche pour chaque projet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container why-grid">
+        <div>
+          <div class="eyebrow">Pourquoi nous choisir ?</div>
+          <h2 class="section-title">
+            Une approche adaptée à vos besoins
+          </h2>
+          <p>
+            Nous savons que chaque installation est différente. C'est pourquoi
+            nous accordons de l'importance à la compréhension de vos attentes,
+            à l'étude de votre projet et au choix d'une solution appropriée.
+          </p>
+        </div>
+
+        <div class="why-box">
+          <h3>Un accompagnement à chaque étape</h3>
+          <ul class="check-list">
+            <li>Écoute et analyse de vos besoins</li>
+            <li>Proposition d'une solution personnalisée</li>
+            <li>Conseils sur votre projet solaire</li>
+            <li>Suivi et assistance selon les services convenus</li>
+            <li>Solutions pour particuliers et professionnels</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="eyebrow">Construisons votre projet</div>
+        <h2>Passez à l'énergie solaire</h2>
+        <p>
+          Vous avez un projet solaire en Tunisie ?
+          Contactez-nous pour discuter de vos besoins et découvrir
+          les solutions adaptées à votre situation.
+        </p>
+        <a class="btn" href="index.html#contact">
+          Demander un devis →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Modern Solar Énergie.
+      Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
