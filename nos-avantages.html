@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f6f0">
+
+  <title>Nos avantages | Modern Solar Énergie</title>
+
+  <meta name="description" content="Découvrez les avantages de Modern Solar Énergie : solutions photovoltaïques, accompagnement personnalisé et économies d'énergie en Tunisie.">
+
+  <style>
+    :root {
+      --green: #174d37;
+      --green-light: #26734f;
+      --gold: #e8b949;
+      --cream: #f8f6f0;
+      --white: #ffffff;
+      --text: #24352c;
+      --muted: #69766d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    .navbar {
+      background: var(--white);
+      padding: 18px 0;
+      border-bottom: 1px solid #e9e9df;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1.3;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green);
+      padding: 10px 16px;
+      border: 1px solid #dce5dc;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 90px 0 80px;
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(232, 185, 73, 0.18),
+          transparent 32%
+        ),
+        linear-gradient(135deg, #f8f6f0, #edf3e9);
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 15px;
+      background: #e7eee4;
+      color: var(--green);
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.15;
+      color: var(--green);
+    }
+
+    .hero h1 span {
+      color: #c99522;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #cbd8ca;
+      color: var(--green);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+    }
+
+    /* Advantages */
+
+    .advantages {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.25;
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .advantage-card {
+      background: var(--white);
+      padding: 30px 25px;
+      border-radius: 18px;
+      border: 1px solid #e8e9df;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .advantage-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(23, 77, 55, 0.09);
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: #edf3e9;
+      font-size: 27px;
+      margin-bottom: 22px;
+    }
+
+    .advantage-card h3 {
+      color: var(--green);
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .advantage-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Commitment */
+
+    .commitment {
+      padding: 65px 0;
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .commitment-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .commitment h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    .commitment h2 span {
+      color: var(--gold);
+    }
+
+    .commitment p {
+      color: #dbe7dd;
+      font-size: 15px;
+    }
+
+    .commitment-list {
+      display: grid;
+      gap: 17px;
+    }
+
+    .commitment-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 17px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 13px;
+    }
+
+    .check {
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .commitment-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .commitment-item small {
+      color: #dbe7dd;
+      font-size: 13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .cta-box {
+      background: var(--white);
+      border: 1px solid #e8e9df;
+      border-radius: 24px;
+      padding: 50px 25px;
+    }
+
+    .cta h2 {
+      color: var(--green);
+      font-size: clamp(27px, 4vw, 38px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #103b2a;
+      color: var(--white);
+      text-align: center;
+      padding: 27px 15px;
+      font-size: 13px;
+    }
+
+    footer p {
+      color: #d6e3d8;
+    }
+
+    footer strong {
+      color: var(--gold);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 800px) {
+      .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .commitment-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .advantages-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-content {
+        align-items: flex-start;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-link {
+        font-size: 12px;
+        padding: 8px 11px;
+        white-space: nowrap;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .advantage-card {
+        padding: 25px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+
+      <a href="index.html" class="logo">
+        MODERN SOLAR
+        <span>ÉNERGIE</span>
+      </a>
+
+      <a href="index.html" class="nav-link">
+        ← Retour à l'accueil
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+
+        <span class="eyebrow">Pourquoi nous choisir ?</span>
+
+        <h1>
+          Nos avantages pour une énergie
+          <span>plus intelligente</span>
+        </h1>
+
+        <p>
+          Chez Modern Solar Énergie, nous vous accompagnons
+          dans votre transition énergétique avec des solutions
+          solaires adaptées à vos besoins, à votre bâtiment
+          et à votre budget.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#avantages" class="btn btn-primary">
+            Découvrir nos avantages
+          </a>
+
+          <a href="contact.html" class="btn btn-secondary">
+            Demander un devis
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages" id="avantages">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Nos engagements</span>
+
+          <h2>Les bonnes raisons de choisir le solaire</h2>
+
+          <p>
+            Découvrez les atouts de nos solutions photovoltaïques
+            et les avantages d'un accompagnement adapté à votre projet.
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+
+          <article class="advantage-card">
+            <div class="icon">☀️</div>
+            <h3>Énergie renouvelable</h3>
+            <p>
+              Exploitez l'énergie du soleil pour produire votre
+              propre électricité et adopter une solution plus
+              respectueuse de l'environnement.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon">💰</div>
+            <h3>Réduction des dépenses</h3>
+            <p>
+              Réduisez potentiellement votre facture d'électricité
+              grâce à une installation adaptée à votre consommation
+              et à vos habitudes énergétiques.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon">🎯</div>
+            <h3>Solutions personnalisées</h3>
+            <p>
+              Chaque projet est différent. Nous vous aidons à
+              identifier une solution adaptée à vos besoins,
+              à votre espace et à votre budget.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon">🛠️</div>
+            <h3>Accompagnement du projet</h3>
+            <p>
+              Bénéficiez d'un accompagnement dans la préparation
+              de votre projet, le choix de votre installation
+              et les différentes étapes de sa réalisation.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon">📈</div>
+            <h3>Investissement réfléchi</h3>
+            <p>
+              Étudiez le coût de votre installation et les économies
+              envisageables afin de prendre une décision adaptée
+              à votre situation.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon">🌍</div>
+            <h3>Un avenir plus durable</h3>
+            <p>
+              Participez à la transition énergétique en privilégiant
+              une source d'énergie renouvelable et en limitant
+              votre dépendance aux énergies conventionnelles.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our commitment -->
+    <section class="commitment">
+      <div class="container commitment-content">
+
+        <div>
+          <span class="eyebrow">Modern Solar Énergie</span>
+
+          <h2>
+            Votre projet solaire,
+            <span>notre engagement.</span>
+          </h2>
+
+          <p>
+            Notre objectif est de vous aider à faire un choix
+            énergétique éclairé, avec une solution cohérente
+            avec vos besoins et les caractéristiques de votre
+            installation en Tunisie.
+          </p>
+        </div>
+
+        <div class="commitment-list">
+
+          <div class="commitment-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Étude de vos besoins</strong>
+              <small>
+                Une approche fondée sur votre consommation
+                et les caractéristiques de votre projet.
+              </small>
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Conseils adaptés</strong>
+              <small>
+                Des recommandations tenant compte de votre
+                situation et de votre budget.
+              </small>
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Devis personnalisé</strong>
+              <small>
+                Une proposition adaptée aux besoins de votre
+                projet avant de prendre votre décision.
+              </small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+
+          <h2>Prêt à passer à l'énergie solaire ?</h2>
+
+          <p>
+            Parlons de votre projet et découvrons ensemble
+            la solution photovoltaïque qui vous convient.
+          </p>
+
+          <a href="contact.html" class="btn btn-primary">
+            Contactez-nous
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © <span id="year"></span>
+      <strong>Modern Solar Énergie</strong>.
+      Tous droits réservés.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
