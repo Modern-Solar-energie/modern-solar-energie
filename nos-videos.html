@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -84,11 +85,24 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
+  <section class="hero" style="position:relative;overflow:hidden;background:#17313f;color:white;">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"
+    >
+      <source src="solar-background.mp4" type="video/mp4">
+    </video>
+
+    <div style="position:absolute;inset:0;background:rgba(15,35,45,0.58);z-index:1;"></div>
+
+    <div class="container" style="position:relative;z-index:2;">
       <div class="eyebrow">Nos réalisations en vidéo</div>
-      <h1>Découvrez nos vidéos</h1>
-      <p>Découvrez nos installations, nos réalisations et notre savoir-faire en énergie solaire à travers les projets de Modern Solar Énergie.</p>
+      <h1 style="color:white;">Découvrez nos vidéos</h1>
+      <p style="color:white;">Découvrez nos installations, nos réalisations et notre savoir-faire en énergie solaire à travers les projets de Modern Solar Énergie.</p>
       <div class="sun-divider" aria-hidden="true">☀ ✳ ☀</div>
     </div>
   </section>
