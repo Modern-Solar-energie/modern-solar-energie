@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f6f0">
+<meta name="theme-color" content="#15191f">
 <title>Modern Solar Énergie | Solutions solaires en Tunisie</title>
 <meta name="description" content="Modern Solar Énergie : solutions photovoltaïques et devis personnalisé en Tunisie.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,22 +23,29 @@ a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
 img{max-width:100%}
 .container{width:min(1200px,94%);margin:auto}
-header{background:rgba(250,248,243,.98);border-bottom:1px solid #e9e4da;position:sticky;top:0;z-index:1000}
+
+/* Barre supérieure : noir charbon et cadres dorés */
+header{background:#15191f;color:#fff;border-bottom:1px solid #b58b5e;position:sticky;top:0;z-index:1000;box-shadow:0 5px 18px rgba(0,0,0,.14)}
 .navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .brand-icon{font-size:32px}
-.brand-name{font-size:19px;line-height:1.15;font-weight:800}
-.brand-subtitle{color:var(--gold);font-size:13px;letter-spacing:.7px}
-.nav-links{display:flex;align-items:center;gap:14px}
-.nav-links a{font-size:11px;font-weight:600;white-space:nowrap}
-.nav-links a:hover{color:var(--gold)}
+.brand-name{font-size:19px;line-height:1.15;font-weight:800;color:#fff}
+.brand-subtitle{color:#e5c69c;font-size:13px;letter-spacing:.7px}
+.nav-links{display:flex;align-items:center;gap:7px}
+.nav-links a{font-size:11px;font-weight:600;white-space:nowrap;color:#fff;border:1px solid #8f6c43;border-radius:7px;padding:8px 9px;transition:background .2s,border-color .2s,color .2s}
+.nav-links a:hover,.nav-links a:focus-visible{color:#15191f;background:#e5c69c;border-color:#e5c69c;outline:none}
 .header-contact{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;white-space:nowrap}
+.header-contact>a:first-of-type{color:#fff}
+.header-contact>a:first-of-type:hover{color:#e5c69c}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:30px;padding:12px 20px;font-size:13px;font-weight:700;cursor:pointer;transition:.2s}
 .btn:hover{transform:translateY(-2px)}
 .btn-gold{background:var(--gold);color:white}
 .btn-gold:hover{background:#967047}
+header .header-contact .btn-gold{background:#e5c69c;color:#15191f;border:1px solid #e5c69c}
+header .header-contact .btn-gold:hover{background:#f0d8b5;border-color:#f0d8b5}
 .btn-dark{background:var(--green);color:white}
-.menu-toggle{display:none;border:1px solid #ded8ce;background:white;border-radius:9px;width:40px;height:40px;font-size:21px;cursor:pointer;flex-shrink:0}
+.menu-toggle{display:none;border:1px solid #b58b5e;background:#20252c;color:#fff;border-radius:9px;width:40px;height:40px;font-size:21px;cursor:pointer;flex-shrink:0}
+.menu-toggle:hover{background:#b58b5e;color:#15191f}
 
 .hero{position:relative;min-height:450px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(13,34,49,.88),rgba(13,34,49,.43)),url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat}
 .hero-content{position:relative;z-index:2;padding:55px 0;max-width:690px}
@@ -152,8 +158,8 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  .brand-icon{font-size:27px}
  .brand-name{font-size:16px}
  .brand-subtitle{font-size:11px}
- .nav-links{gap:9px}
- .nav-links a{font-size:9px}
+ .nav-links{gap:5px}
+ .nav-links a{font-size:9px;padding:7px 6px}
  .header-contact{gap:6px;font-size:9px}
  .header-contact .btn{padding:9px 10px;font-size:9px}
  .solutions-grid{gap:12px}
@@ -172,9 +178,10 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  .header-contact{display:flex;margin-left:0;gap:0}
  .header-contact>a:first-of-type{display:none}
  .header-contact .btn{padding:9px 11px;font-size:10px;white-space:nowrap}
- .nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:0;order:4}
+ .nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:7px;order:4;padding:8px 0 4px}
  .nav-links.open{display:flex}
- .nav-links a{font-size:13px;padding:10px;border-top:1px solid #e8e2d7}
+ .nav-links a{font-size:13px;padding:10px 12px;border:1px solid #8f6c43;border-radius:7px;background:#1d2229}
+ .nav-links a:hover,.nav-links a:focus-visible{background:#e5c69c;color:#15191f}
  .hero{min-height:465px;background-position:60% center}
  .hero-content{padding:38px 0 105px}
  h1{font-size:clamp(30px,7vw,40px)}
