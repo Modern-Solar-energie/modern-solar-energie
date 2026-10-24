@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,14 +7,20 @@
 <meta name="theme-color" content="#15191f">
 <title>Modern Solar Énergie | Solutions solaires en Tunisie</title>
 <meta name="description" content="Modern Solar Énergie : solutions photovoltaïques et devis personnalisé en Tunisie.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
---navy:#142b3b;--gold:#b58b5e;--gold-light:#e5c69c;
---cream:#f8f6f0;--white:#fff;--muted:#68727a;--green:#173c35;
+--navy:#142b3b;
+--gold:#b58b5e;
+--gold-light:#e5c69c;
+--cream:#f8f6f0;
+--white:#fff;
+--muted:#68727a;
+--green:#173c35;
 --shadow:0 8px 28px rgba(20,43,59,.08)
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -24,42 +31,39 @@ button,input,select,textarea{font:inherit}
 img{max-width:100%}
 .container{width:min(1200px,94%);margin:auto}
 
-/* Barre supérieure : noir charbon et cadres dorés */
-header{background:#15191f;color:#fff;border-bottom:1px solid #b58b5e;position:sticky;top:0;z-index:1000;box-shadow:0 5px 18px rgba(0,0,0,.14)}
+/* HEADER */
+header{background:#15191f;color:#fff;border-bottom:1px solid var(--gold);position:sticky;top:0;z-index:1000;box-shadow:0 5px 18px #0002}
 .navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .brand-icon{font-size:32px}
 .brand-name{font-size:19px;line-height:1.15;font-weight:800;color:#fff}
-.brand-subtitle{color:#e5c69c;font-size:13px;letter-spacing:.7px}
+.brand-subtitle{color:var(--gold-light);font-size:13px;letter-spacing:.7px}
 .nav-links{display:flex;align-items:center;gap:7px}
-.nav-links a{font-size:11px;font-weight:600;white-space:nowrap;color:#fff;border:1px solid #8f6c43;border-radius:7px;padding:8px 9px;transition:background .2s,border-color .2s,color .2s}
-.nav-links a:hover,.nav-links a:focus-visible{color:#15191f;background:#e5c69c;border-color:#e5c69c;outline:none}
+.nav-links a{font-size:11px;font-weight:600;white-space:nowrap;color:#fff;border:1px solid #8f6c43;border-radius:7px;padding:8px 9px;transition:.2s}
+.nav-links a:hover,.nav-links a:focus-visible{color:#15191f;background:var(--gold-light);outline:none}
 .header-contact{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;white-space:nowrap}
-.header-contact>a:first-of-type{color:#fff}
-.header-contact>a:first-of-type:hover{color:#e5c69c}
+.header-contact>a:first-of-type:hover{color:var(--gold-light)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:30px;padding:12px 20px;font-size:13px;font-weight:700;cursor:pointer;transition:.2s}
 .btn:hover{transform:translateY(-2px)}
 .btn-gold{background:var(--gold);color:white}
 .btn-gold:hover{background:#967047}
-header .header-contact .btn-gold{background:#e5c69c;color:#15191f;border:1px solid #e5c69c}
-header .header-contact .btn-gold:hover{background:#f0d8b5;border-color:#f0d8b5}
+header .header-contact .btn-gold{background:var(--gold-light);color:#15191f}
 .btn-dark{background:var(--green);color:white}
-.menu-toggle{display:none;border:1px solid #b58b5e;background:#20252c;color:#fff;border-radius:9px;width:40px;height:40px;font-size:21px;cursor:pointer;flex-shrink:0}
-.menu-toggle:hover{background:#b58b5e;color:#15191f}
+.menu-toggle{display:none;border:1px solid var(--gold);background:#20252c;color:#fff;border-radius:9px;width:40px;height:40px;font-size:21px;cursor:pointer}
 
-/* Vidéo d’accueil : lecture automatique, muette et en boucle */
+/* HERO */
 .hero{position:relative;min-height:450px;display:flex;align-items:center;color:white;background:#0d2231;overflow:hidden}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,34,49,.82),rgba(13,34,49,.40));z-index:1;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0d2231d1,#0d223166);z-index:1;pointer-events:none}
 .hero-content{position:relative;z-index:2;padding:55px 0;max-width:690px}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;margin-bottom:12px;color:var(--gold-light)}
 h1{font-size:clamp(34px,4.5vw,52px);line-height:1.15;margin-bottom:18px}
 h1 span{display:block;color:var(--gold-light)}
 .hero p{max-width:600px;color:#f0f1f1;margin-bottom:22px;font-size:15px}
 .hero-points{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:24px;font-size:12px}
-.hero-investment{position:absolute;z-index:3;right:max(3%,calc((100% - 1200px)/2));bottom:25px;display:flex;align-items:center;gap:12px;max-width:280px;padding:13px 20px;border-radius:45px;background:var(--green);color:white;box-shadow:0 6px 22px #0002;font-size:11px;line-height:1.7}
-.hero-investment-icon{font-size:25px;flex-shrink:0}
+.hero-investment{position:absolute;z-index:3;right:3%;bottom:25px;display:flex;align-items:center;gap:12px;max-width:280px;padding:13px 20px;border-radius:45px;background:var(--green);color:white;box-shadow:0 6px 22px #0002;font-size:11px}
 
+/* SECTIONS */
 .section{padding:48px 0}
 .section-heading{text-align:center;margin-bottom:26px}
 .section-heading h2{font-size:28px;line-height:1.3;margin-bottom:7px}
@@ -67,10 +71,10 @@ h1 span{display:block;color:var(--gold-light)}
 .solutions{background:#fffefa}
 .solutions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 .solution-card{display:block;background:white;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);transition:.25s}
-.solution-card:hover{transform:translateY(-5px);box-shadow:0 14px 35px #142b3b25}
+.solution-card:hover{transform:translateY(-5px)}
 .solution-image{position:relative}
 .solution-image img{width:100%;height:150px;object-fit:cover;display:block}
-.solution-icon{position:absolute;left:12px;bottom:-13px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:3px solid white;background:var(--gold);color:white;font-size:15px}
+.solution-icon{position:absolute;left:12px;bottom:-13px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:3px solid white;background:var(--gold);color:white}
 .solution-body{padding:20px 14px 15px}
 .solution-body h3{font-size:14px;margin-bottom:6px}
 .solution-body p{font-size:12px;color:var(--muted);line-height:1.6}
@@ -128,6 +132,7 @@ h1 span{display:block;color:var(--gold-light)}
 .photo-preview{display:none;margin-top:10px;width:100%;max-height:220px;object-fit:contain;border-radius:8px;background:var(--cream)}
 .photo-status{font-size:12px;color:var(--green);margin-top:6px;overflow-wrap:anywhere}
 
+/* FOOTER */
 footer{background:var(--navy);color:white;padding:28px 0 18px}
 .footer-main{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:18px}
 .footer-brand{font-size:20px;font-weight:800}
@@ -136,10 +141,25 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
 .footer-links a{color:#e0e5e9;font-size:12px}
 .copyright{border-top:1px solid #ffffff26;padding-top:15px;text-align:center;font-size:11px;color:#c2cbd1}
 
-/* Assistant virtuel */
+/* ASSISTANT VIRTUEL : ROBOT NOIR */
 #solar-assistant{position:fixed;right:14px;bottom:14px;z-index:9999}
-#solarLauncher{width:54px;height:54px;border:3px solid white;border-radius:50%;background:var(--cream);box-shadow:0 5px 24px #142b3b38;cursor:pointer;font-size:22px}
-#solarWindow{display:none;position:absolute;right:0;bottom:65px;width:min(360px,calc(100vw - 24px));height:min(500px,calc(100dvh - 100px));min-height:320px;background:var(--cream);border:1px solid #e7dfd2;border-radius:18px;overflow:hidden;box-shadow:0 12px 45px #142b3b38;flex-direction:column}
+#solarLauncher{
+ width:76px;height:76px;padding:0;
+ display:flex;align-items:center;justify-content:center;
+ border:0;border-radius:16px;background:transparent;
+ box-shadow:none;cursor:pointer;transition:transform .2s;
+}
+#solarLauncher:hover{transform:scale(1.07)}
+#solarLauncher svg{display:block;width:74px;height:74px;overflow:visible}
+
+#solarWindow{
+ display:none;position:absolute;right:0;bottom:85px;
+ width:min(360px,calc(100vw - 24px));
+ height:min(500px,calc(100dvh - 100px));min-height:320px;
+ background:var(--cream);border:1px solid #e7dfd2;
+ border-radius:18px;overflow:hidden;
+ box-shadow:0 12px 45px #142b3b38;flex-direction:column;
+}
 #solarWindow.open{display:flex}
 .chat-header{background:var(--green);color:white;padding:13px;display:flex;align-items:center;gap:8px}
 .chat-header strong{flex:1;font-size:13px}
@@ -152,9 +172,9 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
 #solarQuick button{font-size:11px;padding:6px 9px;border:1px solid #d9c7ae;background:white;border-radius:15px;cursor:pointer}
 #solarChatForm{display:flex;gap:7px;padding:10px;background:var(--cream)}
 #solarInput{min-width:0;flex:1;border:1px solid #d8d0c4;border-radius:20px;padding:10px;font-size:13px}
-#solarChatForm button{border:0;border-radius:50%;width:40px;background:var(--green);color:white;font-size:18px}
+#solarChatForm button{border:0;border-radius:50%;width:40px;background:var(--green);color:white;font-size:18px;cursor:pointer}
 
-/* Écrans moyens */
+/* TABLETTES */
 @media(max-width:1050px) and (min-width:701px){
  .navbar{gap:9px}
  .brand-icon{font-size:27px}
@@ -168,7 +188,7 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  .solution-image img{height:130px}
 }
 
-/* الهواتف */
+/* TÉLÉPHONES */
 @media(max-width:700px){
  .container{width:94%}
  .navbar{min-height:62px;flex-wrap:wrap;gap:8px;padding:8px 0}
@@ -182,15 +202,13 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  .header-contact .btn{padding:9px 11px;font-size:10px;white-space:nowrap}
  .nav-links{display:none;flex-direction:column;align-items:stretch;width:100%;gap:7px;order:4;padding:8px 0 4px}
  .nav-links.open{display:flex}
- .nav-links a{font-size:13px;padding:10px 12px;border:1px solid #8f6c43;border-radius:7px;background:#1d2229}
- .nav-links a:hover,.nav-links a:focus-visible{background:#e5c69c;color:#15191f}
+ .nav-links a{font-size:13px;padding:10px 12px;background:#1d2229}
  .hero{min-height:465px}
  .hero-content{padding:38px 0 105px}
  h1{font-size:clamp(30px,7vw,40px)}
  .hero p{font-size:13px}
  .hero-points{gap:10px;font-size:10px}
  .hero-investment{right:3%;bottom:12px;max-width:205px;padding:9px 12px;gap:8px;font-size:10px}
- .hero-investment-icon{font-size:20px}
  .section{padding:34px 0}
  .section-heading{margin-bottom:21px}
  .section-heading h2{font-size:23px}
@@ -219,7 +237,9 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  .footer-main{flex-direction:column;text-align:center}
  .footer-links{justify-content:center;gap:12px}
  #solar-assistant{right:10px;bottom:10px}
- #solarLauncher{width:48px;height:48px;font-size:20px}
+ #solarLauncher{width:68px;height:68px}
+ #solarLauncher svg{width:66px;height:66px}
+ #solarWindow{bottom:76px}
 }
 @media(max-width:380px){
  .brand-name{font-size:14px}
@@ -273,7 +293,7 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
   </div>
   <a href="#solutions" class="btn btn-gold">Découvrir nos solutions →</a>
  </div>
- <div class="hero-investment"><span class="hero-investment-icon">♧</span><span><strong>Investissez aujourd'hui</strong>Pour un meilleur demain</span></div>
+ <div class="hero-investment"><span style="font-size:25px">♧</span><span><strong>Investissez aujourd'hui</strong><br>Pour un meilleur demain</span></div>
 </section>
 
 <section class="section solutions" id="solutions">
@@ -370,6 +390,7 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
    <div class="form-group"><label for="typeProjet">Type de projet *</label><select id="typeProjet" name="typeProjet" required><option value="">Choisir une solution</option><option>Installation résidentielle</option><option>Projet commercial ou industriel</option><option>Système solaire autonome</option><option>Stockage d’énergie</option><option>Autre projet</option></select></div>
    <div class="form-group"><label for="ville">Ville</label><input id="ville" name="ville" type="text" placeholder="Votre ville en Tunisie"></div>
    <div class="form-group"><label for="message">Décrivez votre projet</label><textarea id="message" name="message" placeholder="Parlez-nous de vos besoins..."></textarea></div>
+
    <h3>Documents et photos du projet</h3>
    <p class="photo-note">Ajoutez les quatre photos demandées. Formats image acceptés, maximum 8 Mo par photo.</p>
 
@@ -397,12 +418,39 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
  </div>
 </footer>
 
+<!-- Assistant virtuel avec robot noir -->
 <div id="solar-assistant">
- <button id="solarLauncher" type="button" aria-label="Ouvrir l'assistant virtuel" aria-expanded="false">☀️💬</button>
- <section id="solarWindow" role="dialog" aria-label="Assistant virtuel Modern Solar Énergie">
-  <div class="chat-header"><strong id="solarTitle">Assistant Virtuel · Modern Solar</strong><button id="solarLang" type="button">عربي</button><button id="solarClose" type="button" aria-label="Fermer">✕</button></div>
-  <div id="solarMessages" aria-live="polite"></div><div id="solarQuick"></div>
-  <form id="solarChatForm"><input id="solarInput" placeholder="Écrivez votre question..." autocomplete="off" required aria-label="Votre question"><button type="submit" aria-label="Envoyer">➤</button></form>
+ <button id="solarLauncher" type="button" aria-label="Ouvrir l'assistant virtuel" aria-expanded="false">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+   <circle cx="50" cy="10" r="7" fill="#111"/>
+   <path d="M50 17 V25" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+   <path d="M15 52 A36 36 0 0 1 85 52" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+   <rect x="9" y="43" width="13" height="29" rx="6" fill="#111"/>
+   <rect x="78" y="43" width="13" height="29" rx="6" fill="#111"/>
+   <rect x="22" y="31" width="56" height="43" rx="17" fill="#111"/>
+   <path d="M32 49 Q38 39 44 49" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+   <path d="M56 49 Q62 39 68 49" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+   <path d="M84 65 Q82 84 65 84" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
+   <rect x="57" y="79" width="17" height="10" rx="5" fill="#111"/>
+   <path d="M8 72 Q8 67 14 67 H36 Q43 67 43 74 V85 Q43 92 36 92 H20 L12 98 V91 Q8 89 8 84 Z" fill="#111"/>
+   <circle cx="18" cy="80" r="2.2" fill="#fff"/>
+   <circle cx="25" cy="80" r="2.2" fill="#fff"/>
+   <circle cx="32" cy="80" r="2.2" fill="#fff"/>
+  </svg>
+ </button>
+
+ <section id="solarWindow" role="dialog" aria-label="Assistant virtuel Modern Solar Énergie" aria-modal="false">
+  <div class="chat-header">
+   <strong id="solarTitle">Assistant Virtuel · Modern Solar</strong>
+   <button id="solarLang" type="button">عربي</button>
+   <button id="solarClose" type="button" aria-label="Fermer">✕</button>
+  </div>
+  <div id="solarMessages" aria-live="polite"></div>
+  <div id="solarQuick"></div>
+  <form id="solarChatForm">
+   <input id="solarInput" placeholder="Écrivez votre question..." autocomplete="off" required aria-label="Votre question">
+   <button type="submit" aria-label="Envoyer">➤</button>
+  </form>
  </section>
 </div>
 
@@ -410,54 +458,99 @@ footer{background:var(--navy);color:white;padding:28px 0 18px}
 /* Menu mobile */
 const menuToggle=document.getElementById('menuToggle');
 const navLinks=document.getElementById('navLinks');
+
 menuToggle.addEventListener('click',()=>{
  const open=navLinks.classList.toggle('open');
  menuToggle.setAttribute('aria-expanded',String(open));
  menuToggle.textContent=open?'✕':'☰';
 });
+
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
  navLinks.classList.remove('open');
  menuToggle.textContent='☰';
  menuToggle.setAttribute('aria-expanded','false');
 }));
+
 document.getElementById('year').textContent=new Date().getFullYear();
 
 /* Prévisualisation et validation des photos */
 const photoFields=[
-{id:'photoRecto',preview:'previewRecto',status:'statusRecto',label:'Carte d’identité – Recto'},
-{id:'photoVerso',preview:'previewVerso',status:'statusVerso',label:'Carte d’identité – Verso'},
-{id:'photoReference',preview:'previewReference',status:'statusReference',label:'Référence client STEG'},
-{id:'photoCompteur',preview:'previewCompteur',status:'statusCompteur',label:'Compteur électrique'}
+ {id:'photoRecto',preview:'previewRecto',status:'statusRecto',label:'Carte d’identité – Recto'},
+ {id:'photoVerso',preview:'previewVerso',status:'statusVerso',label:'Carte d’identité – Verso'},
+ {id:'photoReference',preview:'previewReference',status:'statusReference',label:'Référence client STEG'},
+ {id:'photoCompteur',preview:'previewCompteur',status:'statusCompteur',label:'Compteur électrique'}
 ];
+
 photoFields.forEach(p=>{
  const input=document.getElementById(p.id);
  const preview=document.getElementById(p.preview);
  const status=document.getElementById(p.status);
  let oldUrl='';
+
  input.addEventListener('change',()=>{
   if(oldUrl){URL.revokeObjectURL(oldUrl);oldUrl='';}
-  preview.style.display='none';preview.removeAttribute('src');status.textContent='';
-  const file=input.files[0];if(!file)return;
-  if(!file.type.startsWith('image/')){input.value='';status.textContent='Veuillez choisir un fichier image.';return;}
-  if(file.size>8*1024*1024){input.value='';status.textContent='Image trop volumineuse. Maximum : 8 Mo.';return;}
-  oldUrl=URL.createObjectURL(file);preview.src=oldUrl;preview.style.display='block';status.textContent='Photo sélectionnée : '+file.name;
+  preview.style.display='none';
+  preview.removeAttribute('src');
+  status.textContent='';
+
+  const file=input.files[0];
+  if(!file)return;
+
+  if(!file.type.startsWith('image/')){
+   input.value='';
+   status.textContent='Veuillez choisir un fichier image.';
+   return;
+  }
+
+  if(file.size>8*1024*1024){
+   input.value='';
+   status.textContent='Image trop volumineuse. Maximum : 8 Mo.';
+   return;
+  }
+
+  oldUrl=URL.createObjectURL(file);
+  preview.src=oldUrl;
+  preview.style.display='block';
+  status.textContent='Photo sélectionnée : '+file.name;
  });
 });
 
+/* Formulaire de devis vers WhatsApp */
 document.getElementById('devisForm').addEventListener('submit',event=>{
  event.preventDefault();
+
  const nom=document.getElementById('nom').value.trim();
  const telephone=document.getElementById('telephone').value.trim();
  const typeProjet=document.getElementById('typeProjet').value;
  const ville=document.getElementById('ville').value.trim();
  const message=document.getElementById('message').value.trim();
+
  const missing=photoFields.filter(p=>!document.getElementById(p.id).files.length);
- if(missing.length){alert('Veuillez sélectionner les quatre photos demandées.');document.getElementById(missing[0].id).focus();return;}
+
+ if(missing.length){
+  alert('Veuillez sélectionner les quatre photos demandées.');
+  document.getElementById(missing[0].id).focus();
+  return;
+ }
+
  for(const p of photoFields){
   const f=document.getElementById(p.id).files[0];
-  if(!f.type.startsWith('image/')||f.size>8*1024*1024){alert('Vérifiez la photo « '+p.label+' » : image acceptée, maximum 8 Mo.');document.getElementById(p.id).focus();return;}
+  if(!f.type.startsWith('image/')||f.size>8*1024*1024){
+   alert('Vérifiez la photo « '+p.label+' » : image acceptée, maximum 8 Mo.');
+   document.getElementById(p.id).focus();
+   return;
+  }
  }
- const text='Bonjour Modern Solar Énergie,\n\nJe souhaite demander un devis.\n\nNom et prénom : '+nom+'\nTéléphone : '+telephone+'\nType de projet : '+typeProjet+'\nVille : '+(ville||'Non précisée')+'\nDescription : '+(message||'Non précisée')+'\n\nPhotos à joindre dans WhatsApp :\n'+photoFields.map(p=>'☑ '+p.label).join('\n')+'\n\nJe vais joindre les quatre photos à ce message.';
+
+ const text='Bonjour Modern Solar Énergie,\n\nJe souhaite demander un devis.\n\nNom et prénom : '+nom+
+ '\nTéléphone : '+telephone+
+ '\nType de projet : '+typeProjet+
+ '\nVille : '+(ville||'Non précisée')+
+ '\nDescription : '+(message||'Non précisée')+
+ '\n\nPhotos à joindre dans WhatsApp :\n'+
+ photoFields.map(p=>'☑ '+p.label).join('\n')+
+ '\n\nJe vais joindre les quatre photos à ce message.';
+
  const url='https://wa.me/21626621515?text='+encodeURIComponent(text);
  const win=window.open(url,'_blank');
  if(!win)window.location.href=url;
@@ -465,96 +558,151 @@ document.getElementById('devisForm').addEventListener('submit',event=>{
 
 /* Assistant virtuel français / arabe */
 (function(){
-const launcher=document.getElementById('solarLauncher');
-const win=document.getElementById('solarWindow');
-const close=document.getElementById('solarClose');
-const langBtn=document.getElementById('solarLang');
-const messages=document.getElementById('solarMessages');
-const form=document.getElementById('solarChatForm');
-const input=document.getElementById('solarInput');
-const quick=document.getElementById('solarQuick');
-const title=document.getElementById('solarTitle');
-let lang='fr';
+ const launcher=document.getElementById('solarLauncher');
+ const chatWindow=document.getElementById('solarWindow');
+ const close=document.getElementById('solarClose');
+ const langBtn=document.getElementById('solarLang');
+ const messages=document.getElementById('solarMessages');
+ const form=document.getElementById('solarChatForm');
+ const input=document.getElementById('solarInput');
+ const quick=document.getElementById('solarQuick');
+ const title=document.getElementById('solarTitle');
 
-const data={
-fr:{
-greeting:'Bonjour et bienvenue chez Modern Solar Énergie ! ☀️\nJe peux vous renseigner sur nos solutions solaires, les panneaux, les batteries et les devis.',
-placeholder:'Écrivez votre question...',
-quick:[['Prix et devis','prix'],['Installation solaire','installation'],['Panneaux solaires','panneaux'],['Batteries','batterie'],['Financement','financement'],['Contacter l’équipe','contact']],
-answers:{
-prix:'Le prix dépend de votre consommation, de la puissance nécessaire et du type d’installation. Contactez notre équipe sur WhatsApp pour une estimation adaptée.',
-installation:'Nous proposons des solutions solaires pour les habitations, les entreprises et les commerces. Contactez-nous pour étudier votre projet.',
-panneaux:'Les panneaux photovoltaïques transforment la lumière du soleil en électricité. Le système dépend de votre consommation et de la surface disponible.',
-batterie:'Les batteries stockent une partie de l’énergie produite pour l’utiliser plus tard. La capacité dépend de vos appareils et de l’autonomie souhaitée.',
-financement:'Les conditions de financement doivent être confirmées par notre équipe. Contactez-nous pour vérifier les offres applicables.',
-contact:'Appelez le +216 26 621 515 ou écrivez-nous sur WhatsApp.'
-},
-fallback:'Merci pour votre question ! Contactez notre équipe au +216 26 621 515 pour une réponse adaptée.',
-switch:'عربي',hello:'Assistant Virtuel'
-},
-ar:{
-greeting:'مرحبًا بك في Modern Solar Énergie! ☀️\nيمكنني مساعدتك في معرفة حلول الطاقة الشمسية والألواح والبطاريات وطلب عرض الأسعار.',
-placeholder:'اكتب سؤالك هنا...',
-quick:[['الأسعار وطلب عرض','prix'],['تركيب الطاقة الشمسية','installation'],['الألواح الشمسية','panneaux'],['البطاريات','batterie'],['التمويل','financement'],['التواصل معنا','contact']],
-answers:{
-prix:'تختلف الأسعار حسب استهلاك الكهرباء والقدرة المطلوبة ونوع التركيب. تواصل معنا عبر WhatsApp للحصول على تقدير مناسب.',
-installation:'نقدم حلولًا للطاقة الشمسية للمنازل والشركات والمحلات. تواصل معنا لدراسة مشروعك.',
-panneaux:'تحوّل الألواح الكهروضوئية ضوء الشمس إلى كهرباء. يعتمد اختيار النظام على استهلاكك ومساحة التركيب.',
-batterie:'تتيح البطاريات تخزين جزء من الطاقة المنتجة لاستخدامه لاحقًا. تعتمد السعة على الأجهزة ومدة الاستقلالية المطلوبة.',
-financement:'يرجى التواصل مع فريقنا للتأكد من شروط التمويل والعروض المتاحة.',
-contact:'اتصل بنا على +216 26 621 515 أو راسلنا عبر WhatsApp.'
-},
-fallback:'شكرًا على سؤالك! تواصل مع فريقنا على الرقم +216 26 621 515 للحصول على إجابة مناسبة.',
-switch:'FR',hello:'المساعد الافتراضي'
-}
-};
+ let lang='fr';
 
-function add(text,type){
- const el=document.createElement('div');
- el.className='msg '+type;
- el.textContent=text;
- el.dir=/[\u0600-\u06FF]/.test(text)?'rtl':'auto';
- messages.appendChild(el);
- messages.scrollTop=messages.scrollHeight;
-}
-function answer(q){
- const s=q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه');
- const rules={
- prix:['prix','tarif','combien','devis','cout','سعر','اسعار','قداش','بكم','تكلفه'],
- installation:['installation','installer','تركيب','منزل','دار','شركة','محل'],
- panneaux:['panneau','photovoltaique','solaire','الواح','الطاقة الشمسية'],
- batterie:['batterie','stockage','بطارية','بطاريات','تخزين'],
- financement:['financement','mensualite','avance','credit','154','تمويل','تقسيط'],
- contact:['contact','telephone','whatsapp','numero','اتصل','رقم الهاتف','واتساب','تواصل']
+ const data={
+  fr:{
+   greeting:'Bonjour et bienvenue chez Modern Solar Énergie ! ☀️\nJe peux vous renseigner sur nos solutions solaires, les panneaux, les batteries et les devis.',
+   placeholder:'Écrivez votre question...',
+   quick:[
+    ['Prix et devis','prix'],
+    ['Installation solaire','installation'],
+    ['Panneaux solaires','panneaux'],
+    ['Batteries','batterie'],
+    ['Financement','financement'],
+    ['Contacter l’équipe','contact']
+   ],
+   answers:{
+    prix:'Le prix dépend de votre consommation, de la puissance nécessaire et du type d’installation. Contactez notre équipe sur WhatsApp pour une estimation adaptée.',
+    installation:'Nous proposons des solutions solaires pour les habitations, les entreprises et les commerces. Contactez-nous pour étudier votre projet.',
+    panneaux:'Les panneaux photovoltaïques transforment la lumière du soleil en électricité. Le système dépend de votre consommation et de la surface disponible.',
+    batterie:'Les batteries stockent une partie de l’énergie produite pour l’utiliser plus tard. La capacité dépend de vos appareils et de l’autonomie souhaitée.',
+    financement:'Les conditions de financement doivent être confirmées par notre équipe. Contactez-nous pour vérifier les offres applicables.',
+    contact:'Appelez le +216 26 621 515 ou écrivez-nous sur WhatsApp.'
+   },
+   fallback:'Merci pour votre question ! Contactez notre équipe au +216 26 621 515 pour une réponse adaptée.',
+   switch:'عربي',
+   hello:'Assistant Virtuel'
+  },
+  ar:{
+   greeting:'مرحبًا بك في Modern Solar Énergie! ☀️\nيمكنني مساعدتك في معرفة حلول الطاقة الشمسية والألواح والبطاريات وطلب عرض الأسعار.',
+   placeholder:'اكتب سؤالك هنا...',
+   quick:[
+    ['الأسعار وطلب عرض','prix'],
+    ['تركيب الطاقة الشمسية','installation'],
+    ['الألواح الشمسية','panneaux'],
+    ['البطاريات','batterie'],
+    ['التمويل','financement'],
+    ['التواصل معنا','contact']
+   ],
+   answers:{
+    prix:'تختلف الأسعار حسب استهلاك الكهرباء والقدرة المطلوبة ونوع التركيب. تواصل معنا عبر WhatsApp للحصول على تقدير مناسب.',
+    installation:'نقدم حلولًا للطاقة الشمسية للمنازل والشركات والمحلات. تواصل معنا لدراسة مشروعك.',
+    panneaux:'تحوّل الألواح الكهروضوئية ضوء الشمس إلى كهرباء. يعتمد اختيار النظام على استهلاكك ومساحة التركيب.',
+    batterie:'تتيح البطاريات تخزين جزء من الطاقة المنتجة لاستخدامه لاحقًا. تعتمد السعة على الأجهزة ومدة الاستقلالية المطلوبة.',
+    financement:'يرجى التواصل مع فريقنا للتأكد من شروط التمويل والعروض المتاحة.',
+    contact:'اتصل بنا على +216 26 621 515 أو راسلنا عبر WhatsApp.'
+   },
+   fallback:'شكرًا على سؤالك! تواصل مع فريقنا على الرقم +216 26 621 515 للحصول على إجابة مناسبة.',
+   switch:'FR',
+   hello:'المساعد الافتراضي'
+  }
  };
- for(const k in rules){if(rules[k].some(w=>s.includes(w)))return data[lang].answers[k];}
- if(/bonjour|salut|مرحبا|السلام عليكم|سلام/.test(s))return lang==='ar'?'أهلًا وسهلًا! كيف يمكنني مساعدتك؟':'Bonjour ! Comment puis-je vous aider ?';
- return data[lang].fallback;
-}
-function setLang(l){
- lang=l;const d=data[l];
- title.textContent=d.hello;input.placeholder=d.placeholder;
- input.dir=l==='ar'?'rtl':'ltr';langBtn.textContent=d.switch;
- messages.replaceChildren();add(d.greeting,'bot');quick.replaceChildren();
- d.quick.forEach(([label,key])=>{
-  const b=document.createElement('button');b.type='button';b.textContent=label;
-  b.addEventListener('click',()=>{add(label,'user');add(d.answers[key],'bot');});
-  quick.appendChild(b);
+
+ function add(text,type){
+  const el=document.createElement('div');
+  el.className='msg '+type;
+  el.textContent=text;
+  el.dir=/[\u0600-\u06FF]/.test(text)?'rtl':'auto';
+  messages.appendChild(el);
+  messages.scrollTop=messages.scrollHeight;
+ }
+
+ function answer(q){
+  const s=q.toLowerCase()
+   .normalize('NFD')
+   .replace(/[\u0300-\u036f]/g,'')
+   .replace(/[أإآ]/g,'ا')
+   .replace(/ة/g,'ه');
+
+  const rules={
+   prix:['prix','tarif','combien','devis','cout','سعر','اسعار','قداش','بكم','تكلفه'],
+   installation:['installation','installer','تركيب','منزل','دار','شركة','محل'],
+   panneaux:['panneau','photovoltaique','solaire','الواح','الطاقة الشمسية'],
+   batterie:['batterie','stockage','بطارية','بطاريات','تخزين'],
+   financement:['financement','mensualite','avance','credit','154','تمويل','تقسيط'],
+   contact:['contact','telephone','whatsapp','numero','اتصل','رقم الهاتف','واتساب','تواصل']
+  };
+
+  for(const k in rules){
+   if(rules[k].some(w=>s.includes(w)))return data[lang].answers[k];
+  }
+
+  if(/bonjour|salut|مرحبا|السلام عليكم|سلام/.test(s)){
+   return lang==='ar'?'أهلًا وسهلًا! كيف يمكنني مساعدتك؟':'Bonjour ! Comment puis-je vous aider ?';
+  }
+
+  return data[lang].fallback;
+ }
+
+ function setLang(l){
+  lang=l;
+  const d=data[l];
+
+  title.textContent=d.hello;
+  input.placeholder=d.placeholder;
+  input.dir=l==='ar'?'rtl':'ltr';
+  langBtn.textContent=d.switch;
+
+  messages.replaceChildren();
+  add(d.greeting,'bot');
+  quick.replaceChildren();
+
+  d.quick.forEach(([label,key])=>{
+   const b=document.createElement('button');
+   b.type='button';
+   b.textContent=label;
+   b.addEventListener('click',()=>{
+    add(label,'user');
+    add(d.answers[key],'bot');
+   });
+   quick.appendChild(b);
+  });
+ }
+
+ launcher.addEventListener('click',()=>{
+  const open=chatWindow.classList.toggle('open');
+  launcher.setAttribute('aria-expanded',String(open));
+  if(open)input.focus();
  });
-}
-launcher.addEventListener('click',()=>{
- win.classList.toggle('open');
- launcher.setAttribute('aria-expanded',String(win.classList.contains('open')));
-});
-close.addEventListener('click',()=>{
- win.classList.remove('open');launcher.setAttribute('aria-expanded','false');
-});
-langBtn.addEventListener('click',()=>setLang(lang==='fr'?'ar':'fr'));
-form.addEventListener('submit',e=>{
- e.preventDefault();const q=input.value.trim();if(!q)return;
- add(q,'user');input.value='';add(answer(q),'bot');
-});
-setLang('fr');
+
+ close.addEventListener('click',()=>{
+  chatWindow.classList.remove('open');
+  launcher.setAttribute('aria-expanded','false');
+ });
+
+ langBtn.addEventListener('click',()=>setLang(lang==='fr'?'ar':'fr'));
+
+ form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const q=input.value.trim();
+  if(!q)return;
+  add(q,'user');
+  input.value='';
+  add(answer(q),'bot');
+ });
+
+ setLang('fr');
 })();
 </script>
 </body>
